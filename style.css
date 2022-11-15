@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  position: relative;
+  /* background-color:  #c68c53a8; */
+  background-image: url("./bg.jpg");
+  backdrop-filter: blur(5px);
+  background-size:cover;
+  /* font-family: 'Architects Daughter', cursive; */
+}
+
+header h1{
+  color : #7a4d4d ;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 5px;
+  background :#7a4d4d ;
+  color: white;
+  border: 1px solid brown  ;
+}
+
+button:hover{
+  color: white;
+  background-color: #b37272 ;
+}
+
+#modal{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* #inner_modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+
+#inner_modal {
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+.modal-container{
+  display: flex;
+  flex-direction: column;
+}
+#inner_modal textarea{
+  width: 276px;
+  height: 276px;
+  padding: 25px;
+  outline: none;
+  resize: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+  padding-top: 60px;
+}
+
+#inner_modal i{
+  font-size: 1.4rem;
+  color: gray;
+  cursor: pointer;
+  margin-top: -285px;
+  margin-left: -47px;
+  transition: 1s ease-in-out;
+}
+
+#inner_modal i:hover{
+  color: lightgray;
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+}
+
+#header{
+  color: white;
+  padding: 0 20px;
+  min-height: 70px;
+  text-shadow: 1px 1px black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fas{
+  color: #7a4d4d ;
+}
+
+#all_notes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.note{
+  width:300px;
+  min-height: 300px;
+  height: 100%;
+  transition: 2s;
+  cursor: pointer;
+  overflow-wrap: break-word;
+  box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+}
+
+.note h1{
+  font-size: 1.3rem;
+  opacity: 80%;
+  white-space: pre-wrap;
+  padding-bottom: 2.7em;
+
+}
+
+h2 {
+  font-size: 1.2em;
+}
+.details {
+  margin-top: 25px;
+  padding: 0 15px;
+  font-size: 1.5rem;
+}
+
+.details i{
+  color: whitesmoke;
+  cursor: pointer;
+  text-shadow: 1px 1px #BBB;
+}
+
+.date{
+  opacity: 60%;
+  font-size: 18px;
+  position: absolute;
+  bottom: 2%;
+}
+@media(max-width:1280px){
+  .container{
+    width: 100%;
+  }
+}
+
+@media(max-width:768px){
+  #header{
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+input[type="date"]{
+  background-color: #7a4d4d;
+  padding: 6px;
+  font-family: "Roboto Mono",monospace;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#topic{
+  margin-left: 22px;
+  background: #ebe6e6;
+  position: relative;
+  /* top: 313px; */
+  /* left: 42.5%; */
+  top: 60px;
+  height: 25px;
+  outline: none;
+  width: 200px;
+  border: 5px solid white;
+}
+
+.btns{
+  position: absolute;
+  top: 18%;
+  left: 97%;
+}
